@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoltPhone - Phone E‑Commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-mark">VP</span>
+        <span class="brand-name">VoltPhone</span>
+      </div>
+      <nav class="nav">
+        <a href="#new">New</a>
+        <a href="#deals">Deals</a>
+        <a href="#compare">Compare</a>
+        <a href="#support">Support</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <div class="header-actions">
+        <button class="ghost" id="wishlistBtn">Wishlist</button>
+        <button class="cart" id="cartBtn">Cart <span id="cartCount">0</span></button>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Next‑gen mobile store</p>
+        <h1>Upgrade to a phone that feels built for 2026.</h1>
+        <p class="sub">Curated flagships, smart trade‑ins, and instant shipping. Compare specs in seconds.</p>
+        <div class="hero-cta">
+          <button class="primary">Shop latest</button>
+          <button class="outline">Trade in</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>2‑year</strong>
+            <span>protection plan</span>
+          </div>
+          <div>
+            <strong>4.8/5</strong>
+            <span>avg rating</span>
+          </div>
+          <div>
+            <strong>30‑min</strong>
+            <span>express pickup</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="glass">
+          <p class="tag">Flagship pick</p>
+          <h3>Pulse X Pro</h3>
+          <p>6.8" AMOLED · 120Hz · 512GB</p>
+          <div class="price">$899</div>
+          <button class="primary">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="strip" id="compare">
+      <div class="strip-card">
+        <h3>Compare in seconds</h3>
+        <p>Stack up specs, cameras, and batteries side‑by‑side.</p>
+      </div>
+      <div class="strip-card">
+        <h3>Trade‑in boost</h3>
+        <p>Get instant credit when you bring in your old phone.</p>
+      </div>
+      <div class="strip-card">
+        <h3>Protected checkout</h3>
+        <p>Encrypted payments with a 30‑day return window.</p>
+      </div>
+    </section>
+
+    <section class="catalog" id="new">
+      <div class="catalog-head">
+        <div>
+          <h2>Shop phones</h2>
+          <p>Filter by platform, pricing, or form factor.</p>
+        </div>
+        <div class="catalog-tools">
+          <div class="filters" id="filters"></div>
+          <input type="search" id="searchInput" placeholder="Search by model, color, or storage" />
+          <select id="sortSelect">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Rating</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="deal" id="deals">
+      <div class="deal-left">
+        <p class="eyebrow">Weekend offer</p>
+        <h2>Bundle a phone + earbuds and save $180.</h2>
+        <p>Limited bundles ship within 24 hours. Includes wireless charging pad.</p>
+        <button class="primary">See bundles</button>
+      </div>
+      <div class="deal-right">
+        <div class="deal-card">
+          <h4>Echo Buds Air</h4>
+          <p>Noise canceling · 30‑hr battery</p>
+          <span class="slash">$149</span>
+          <span class="price">$89</span>
+        </div>
+        <div class="deal-card">
+          <h4>VoltCharge Pad</h4>
+          <p>Fast wireless charger · USB‑C</p>
+          <span class="slash">$79</span>
+          <span class="price">$39</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div>
+        <h2>People love the clarity.</h2>
+        <p>Real specs, no fluff, and lightning‑fast checkout.</p>
+      </div>
+      <div class="quotes">
+        <blockquote>
+          “Switched from carrier stores. This is actually fun to shop.”
+          <span>— Mina R.</span>
+        </blockquote>
+        <blockquote>
+          “Trade‑in value was fair and applied instantly.”
+          <span>— Javier P.</span>
+        </blockquote>
+        <blockquote>
+          “Best phone comparison I’ve used.”
+          <span>— Priya K.</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="newsletter" id="support">
+      <div>
+        <h2>Get launch alerts</h2>
+        <p>Be first to know when new devices drop.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button class="primary" type="submit">Notify me</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <span class="brand-name">VoltPhone</span>
+      <p>Powering the next upgrade.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Warranty</a>
+      <a href="#">Careers</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
