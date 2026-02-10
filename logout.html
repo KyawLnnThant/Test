@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoltPhone - Logout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="auth">
+  <header class="site-header">
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-mark">VP</span>
+        <span class="brand-name">VoltPhone</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Store</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card">
+      <div class="auth-header">
+        <p class="eyebrow">See you soon</p>
+        <h1>Signing you out...</h1>
+        <p class="sub">We will redirect you to the login page.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    localStorage.removeItem("vp_admin_auth");
+    window.location.replace("login.html");
+  </script>
+</body>
+</html>

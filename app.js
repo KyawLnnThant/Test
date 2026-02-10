@@ -1,3 +1,9 @@
+const AUTH_KEY = "vp_admin_auth";
+
+if (localStorage.getItem(AUTH_KEY) !== "true") {
+  window.location.replace("login.html");
+}
+
 const products = [
   {
     id: 1,
